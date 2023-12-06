@@ -1,0 +1,49 @@
+define tourguide= Character('Tour Guides', color= "#b464ed")
+define kadet= Character ('Kadet', color= "#74ed64")
+label start :
+    tourguide "Selamat datang Prajurit Kadet,Selamat atas diterimanya di Universitas Pertahanan. Sebelum memulai perkuliahan di UNHAN kamu harus mengetahui gedung gedung dan fungsinya di UNHAN" 
+    
+label pilihan:
+    tourguide "Silahkan pilih lokasi yang ingin diketahui"
+menu:
+    "Rektorat":
+        scene bg_rektorat
+        show tourguide at left
+        tourguide "Ini adalah gedung Rektorat. Gedung megah yang elegan ini adalah gedung sakral di UNHAN."
+        tourguide "Rektorat memiliki patung ikonik berada di halamannya. Bagian belakang rektorat menghadap ke lapangan  upacara."
+        tourguide "Gedung ini tak boleh dimasuki oleh kadet mahasiswa UNHAN kecuali dengan perintah."
+        tourguide "Gedung ini berfungsi sebagai tempat untuk merencanakan, mengarahkan, dan mengendalikan semua kegiatan kampus yang dikerjakan oleh  managemen kampus untuk mencapai suatu visi UNHAN."
+        tourguide "Gedung direktorat ditempati pimpinan kampus seperti rektor, wakil rektor ( I, II ,dan III) , bendahara, sekretaris, kelompok penelitian, pengabdian masyarakat, dan lain lain."
+        jump pilihan
+    "AMP":
+        scene bg_amp
+        show tourguide at left
+        tourguide "AMP atau Aula Merah Putih merupakan suatu auditorium yang berkapasitas 1500 orang. AMP adalah auditorium yang mutifungsi."
+        tourguide "Gedung ini digunakan untuk acara wisuda, pengangkatan guru besar, acara penerimaan tamu kehormatan, kuliah umum, dan acara acara formal lainnya"
+        jump pilihan
+    "Markas Komando":
+        scene bg_resimen
+        show tourguide at left
+        tourguide "Sekarang kita berada di Markas Komando atau biasa disebut dengan Mako."
+        tourguide "Dari namanya saja pasti kamu merasakan ada sesuatu hal hebat di dalam Mako ini"
+        tourguide "Jadi Mako ditempati struktur resimen UNHAN dan resimen Korps Kadet  mahasiswa."
+        kadet "Kalau untuk prajurit kadet kegiatan apa yang biasa dilakukan di Mako?"
+        tourguide "Prajurit Kadet biasanya menjalankan Caraka di Mako."
+        jump pilihan
+    "Laboratorium Siber":
+        scene bg_cyber
+        show tourguide at left
+        tourguide "sekarang kita berada  di ruangan siber"
+        tourguide "dimana gedung ini merupakan tempat keamanan siber  yang memiliki manfaat utamanya yaitu memantau,mencegah dan menanggulangi kejahatan siber." 
+        tourguide "ruangan siber sangatlah berguna untuk universitas pertahanan dalam menjaga,memberi edukasi kepada para kadet mengenai siber."
+        jump pilihan
+    "Apotek":
+        scene bg_apotek
+        show tourguide at left
+        tourguide "sekarang kita berada di apotek dimana tempat ini merupakan tempat layanan bagi para kadet yang memilki gangguan kesehatan mendapatkan obat."
+        tourguide" Disini juga merupakan tempat sarana untuk kegiatan kefarmasian untuk pengelolaan obat maupun bahan obat."
+        kadet " izin, apakah obat yang diberikan gratis atau perlu bayar?"
+        tourguide " tidak perlu, semua obat obatan yang diberikan gratis untuk para kadet"
+        jump pilihan
+
+return
